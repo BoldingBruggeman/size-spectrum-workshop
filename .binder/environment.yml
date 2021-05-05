@@ -3,7 +3,7 @@ name: pyfabm-environment
 channels:
   - conda-forge
 dependencies:
-  - python
+  - python=3.8
   - numpy
   - matplotlib
   - scipy
