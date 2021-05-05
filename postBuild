@@ -2,5 +2,5 @@
 
 set -e
 
-cmake -S extern/fabm/src/drivers/fabm -B build
-cmake --install build
+cmake -S extern/fabm/src/drivers/fabm -B /tmp/build
+cmake --install /tmp/build
