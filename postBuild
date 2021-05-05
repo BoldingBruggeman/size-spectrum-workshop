@@ -2,11 +2,5 @@
 
 set -e
 
-mkdir -p ~/Code
-cd ~/Code
-git clone https://github.com/fabm-model/fabm.git
-
-mkdir -p ~/build/python-fabm
-cd ~/build/python-fabm
-cmake ~/Code/fabm/src/drivers/python
-make install
+cmake -S extern/fabm/src/drivers/fabm -B build
+cmake --install build
