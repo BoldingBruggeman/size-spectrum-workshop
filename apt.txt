@@ -1,4 +1,2 @@
 cmake
 gfortran
-python-numpy
-python-matplotlib
