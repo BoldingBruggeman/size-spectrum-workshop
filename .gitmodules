@@ -1,3 +1,9 @@
 [submodule "extern/fabm"]
 	path = extern/fabm
 	url = ../../fabm-model/fabm.git
+[submodule "extern/fabm-medusa"]
+	path = extern/fabm-medusa
+	url = ../../FABM-MEDUSA/fabm-medusa.git
+[submodule "extern/fabm-mizer"]
+	path = extern/fabm-mizer
+	url = ../../pmlmodelling/fabm-mizer.git
