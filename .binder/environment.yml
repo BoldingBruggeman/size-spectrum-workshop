@@ -8,3 +8,5 @@ dependencies:
   - matplotlib
   - scipy
   - ipympl
+  - netcdf4
+  - pyyaml
