@@ -2,10 +2,11 @@
 
 set -e
 
-REPO_DIR="$( cd "$( dirname "$0" )" && pwd )"
+REPO_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+WORK_DIR=`mktemp -d`
 
-mkdir -p /tmp/build
-cd /tmp/build
+cd ${WORK_DIR}
 cmake ${REPO_DIR}/extern/fabm/src/drivers/python -DFABM_INSTITUTES="gotm;medusa;mizer" -DFABM_MEDUSA_BASE=${REPO_DIR}/extern/fabm-medusa -DFABM_MIZER_BASE=${REPO_DIR}/extern/fabm-mizer
 make install
 cd -
+rm -rf ${WORK_DIR}
