@@ -1,5 +1,4 @@
-  
-name: pyfabm-environment
+name: ssw
 channels:
   - conda-forge
 dependencies:
