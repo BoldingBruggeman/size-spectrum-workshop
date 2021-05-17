@@ -1,4 +1,4 @@
-#!/bin/bash
+# This script is intended to be source'd, not executed
 
 REPO_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 WORK_DIR=`mktemp -d`
