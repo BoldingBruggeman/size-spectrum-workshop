@@ -2,5 +2,5 @@
 
 set -e
 
-${REPO_DIR}/install
+source ${REPO_DIR}/install
 
