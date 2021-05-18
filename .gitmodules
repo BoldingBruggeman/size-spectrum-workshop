@@ -7,3 +7,7 @@
 [submodule "extern/fabm-mizer"]
 	path = extern/fabm-mizer
 	url = ../../pmlmodelling/fabm-mizer.git
+[submodule "extern/gotm"]
+	path = extern/gotm
+	url = ../../gotm-model/code.git
+	branch = v6.0

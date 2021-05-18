@@ -1,10 +1,17 @@
 # This script is intended to be source'd, not executed
 
 REPO_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-WORK_DIR=`mktemp -d`
 
+WORK_DIR=`mktemp -d`
 cd ${WORK_DIR}
 cmake ${REPO_DIR}/extern/fabm/src/drivers/python -DFABM_INSTITUTES="gotm;medusa;mizer" -DFABM_MEDUSA_BASE=${REPO_DIR}/extern/fabm-medusa -DFABM_MIZER_BASE=${REPO_DIR}/extern/fabm-mizer
+make install
+cd -
+rm -rf ${WORK_DIR}
+
+WORK_DIR=`mktemp -d`
+cd ${WORK_DIR}
+cmake ${REPO_DIR}/extern/gotm -DFABM_INSTITUTES="gotm;medusa;mizer" -DFABM_MEDUSA_BASE=${REPO_DIR}/extern/fabm-medusa -DFABM_MIZER_BASE=${REPO_DIR}/extern/fabm-mizer
 make install
 cd -
 rm -rf ${WORK_DIR}
